@@ -1154,12 +1154,10 @@ body.cursor-hover .cursor-outline {
 
 .contact-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 40px;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact-card {
