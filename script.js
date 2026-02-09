@@ -30,8 +30,8 @@
       this.vy = (Math.random() - 0.5) * 0.5;
       this.radius = Math.random() * 2 + 0.5;
       this.opacity = Math.random() * 0.5 + 0.1;
-      // Random color: cyan or purple
-      this.color = Math.random() > 0.5 ? '0, 240, 255' : '180, 74, 255';
+      // Random color: lavender or soft purple
+      this.color = Math.random() > 0.5 ? '124, 58, 237' : '167, 139, 250';
     }
 
     update() {
@@ -78,7 +78,7 @@
         if (dist < CONNECTION_DISTANCE) {
           const opacity = (1 - dist / CONNECTION_DISTANCE) * 0.15;
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(0, 240, 255, ${opacity})`;
+          ctx.strokeStyle = `rgba(124, 58, 237, ${opacity})`;
           ctx.lineWidth = 0.5;
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
@@ -348,7 +348,7 @@
   // =====================
   document.querySelectorAll('.skill-pill').forEach(pill => {
     pill.addEventListener('mouseenter', () => {
-      pill.style.boxShadow = '0 0 15px rgba(0, 240, 255, 0.3), 0 0 30px rgba(0, 240, 255, 0.1)';
+      pill.style.boxShadow = '0 0 15px rgba(124, 58, 237, 0.15), 0 0 30px rgba(124, 58, 237, 0.06)';
     });
     pill.addEventListener('mouseleave', () => {
       pill.style.boxShadow = 'none';
@@ -363,8 +363,8 @@
     entries.forEach(entry => {
       const dot = entry.target.querySelector('.marker-dot');
       if (entry.isIntersecting && dot) {
-        dot.style.boxShadow = '0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.3)';
-        dot.style.background = '#00f0ff';
+        dot.style.boxShadow = '0 0 15px rgba(124, 58, 237, 0.3), 0 0 30px rgba(124, 58, 237, 0.15)';
+        dot.style.background = '#7c3aed';
       }
     });
   }, { threshold: 0.5 });
