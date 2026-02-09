@@ -962,7 +962,7 @@ body.cursor-hover .cursor-outline {
    ================================ */
 .certs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 16px;
   margin-bottom: 40px;
 }
@@ -1019,12 +1019,11 @@ body.cursor-hover .cursor-outline {
 }
 
 .cert-issuer {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  white-space: nowrap;
+  letter-spacing: 0.5px;
 }
 
 .awards-section {
