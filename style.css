@@ -1027,6 +1027,7 @@ body.cursor-hover .cursor-outline {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .awards-section {
